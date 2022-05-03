@@ -1,105 +1,108 @@
-nav {
-  height: 46px;
-  background-color: #68553F;
-  border: 1px solid black;
+/* Navigation styles */
+.logo {
+    background: white;
+    height: 230px;
+    background-image: url("../images/jakes-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.inline-block {
-  padding: 3px;
-  display: inline-block;
-  background-color: #231D15;
-  text-align: center;
-  font-size: 30px;
-  width: 100px;
-  height: 40px;
-  color: white;
+.nav {
+    display: flex;
+    background-color: black;
+    padding: 20px;
 }
-.left {
-  float: left;
-  width: 500px;
-  height: 700px;
-  position: relative; top: 5px;
-  color: #161212;
+.left, .center, .right {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.lefttop {
-  width: 500px;
-  height: 300px;
-  border: 1px solid black;
-  background-color: #68553F;
+.left, .right {
+    width: 25%;
 }
-.image1 {
-  width: 250px;
-  height: 200px;
-  position: relative; top: 35px; left: 110px;
+.center {
+    width: 50%;
 }
-.Dinasaur {
-  position: relative; top: 25px; left: 193px;
-  font-size: 24px;
+.center a {
+color: white;
+padding: 10px;
+font-size: 18px;
+text-decoration: none;
+font-family: Arial;
 }
-.leftbottom {
-  width: 500px;
-  height: 620px;
-  border: 1px solid black;
-  position: relative; top: 5px;
-  background-color: #68553F;
+button {
+    color: black;
+    font-size: 16px;
+    padding: 15px;
+    width: 50%;
 }
-p {
-  font-size: 20px;
-  position: relative; left: 10px;
+.right button {
+    background-color: yellow;
 }
-.right {
-  float: left;
-  width: 974px;
-  height: 700px;
-  position: relative; top: 5px; left: 5px;
-  color: #161212;
+.left button {
+    background-color: skyblue;
 }
-.righttop {
-  width: 974px;
-  height: 420px;
-  border: 1px solid black;
-  background-color: #68553F;
+/* Column styles */
+.column {
+    display: flex;
+    height: 1200px;
+    width: 800px;
+    flex-direction: column;
+    margin: 0 auto;
 }
-.image2 {
-  width: 420px;
-  position: relative; top: 15px; left: 15px;
-  float: left;
+.meal1, .meal2, .meal3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.TREX {
-  text-align: center;
+.meal1 {
+  margin-top: 20px;
+  background-image: url("../images/steak.png");  
 }
-.Bio {
-  width: 940px;
-  text-align: left;
-  position: relative; left: 25px;
+.meal2 {
+    background-image: url("../images/soup.png");
 }
-.rightbottom {
-  width: 974px;
-  height: 500px;
-  border: 1px solid black;
-  position: relative; top: 5px;
-  background-color: #68553F;
+.meal3 {
+    background-image: url("../images/cheesecake.png");
 }
-.more {
-  text-align: center;
+.text {
+    background: rgb(0,0,0,0.7);
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
 }
-.card1 {
-  width: 250px;
-  height: 400px;
-  border: 1px solid black;
-  float: left;
-  position: relative; left: 50px;
+.text p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
 }
-.card2 {
-  width: 250px;
-  height: 400px;
-  border: 1px solid black;
-  float: left;
-  position: relative; left: 100px;
+.text h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.card3 {
-  width: 250px;
-  height: 400px;
-  border: 1px solid black;
-  float: left;
-  position: relative; left: 150px;
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-size: 12px;
+    height: 40px;
+    padding: 25px;
+}
+.footer a {
+    padding: 20px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.fb {
+    color:skyblue;
+}
+.tw {
+    color: yellow;
+}
+.ig {
+    color: red;
 }
